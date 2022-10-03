@@ -8,9 +8,10 @@ import org.jboss.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
-@ApplicationScoped
+@RequestScoped
 public class InfinispanClient {
 
     @Inject
