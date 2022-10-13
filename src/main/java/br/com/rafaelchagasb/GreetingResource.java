@@ -20,7 +20,7 @@ public class GreetingResource {
 
         Optional<String> itemCache = service.get(name);
 
-        if(itemCache.isPresent()) {
+        if(!itemCache.isPresent()) {
             service.put(name, name, 60l, SECONDS);
         }
 
